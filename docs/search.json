@@ -2,13 +2,13 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Notes on Exploarations of Natural Laws as sensored by the Human Mind",
+    "title": "Phycs Concepts as the Indical Framework for Modelling Economy Systems",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nEnergy [1]: \\[\n\\begin{split}\n&\nE = \\overline{W} = E_{trl} + E_{rot} + E_{vbr} + E_{spn} + ... + E_{mix} =  \nE_{kin} + E_{pot} =\nE_{Magn} + E_{Elec}\n\\\\\n&\n\\stackrel{continuum}{=}\n\\frac{1}{2} kT + \\frac{1}{2} kT  =\nkT\n\\\\\n&\n\\stackrel{quantum}{=}\n\\hbar\\omega =\nh\\nu\n\\stackrel{distribtion}{=}\nh\\nu \\frac{1}{e^{\\frac{h\\nu}{kT}}-1}\n\\\\\n&\n\\stackrel{relativistic}{=}\n\\sqrt{ (pc)^2 + (mc^2)^2 } =\nc \\cdot \\sqrt{ p^2 + (mc)^2 }\n\\end{split}\n\\tag{1}\\]\n\\[\nE_{kin}^{max} =\neV_0 =\nh(\\nu - \\nu_0)\n\\tag{2}\\]\nAverage Energy Densitiy (Electromagnetic Intensity and Poynting-Vector): \n\\[\n\\langle $w$_{EM} \\rangle =\n\\frac{1}{2} \\varepsilon_0 (\\mathscr{E}^2 + c^2 \\mathscr{B}^2 ) =\n\\varepsilon_0 \\mathscr{E}^2 + \\frac{1}{\\mu_0}\\mathscr{B}^2 =\n\\frac{1}{c} \\frac{\\mathscr{E \\cdot B}}{\\mu_0} =\n\\frac{1}{c} \\mathscr{I} =\n\\frac{1}{c} \\langle |\\vec{S}| \\rangle\n\\tag{3}\\]\nQuest: What is momentum \\(p\\) if there is no mass, \\(m=0\\) ?\nQuest: Is energy \\(E\\) also the cause for mass \\(m\\), apart from being the ability to do work \\(W\\), \\(\\Delta E = W = F \\cdot x = m \\cdot a \\cdot x = mx \\cdot \\frac{dv}{dt} = mx \\cdot \\frac{d^2x}{dt^2} = M \\cdot \\frac{d^2x}{dt^2}\\) ?\n\nReferences\n\n\n1. Eckhard R (2006) Theoretische Physik: Mechanik, 1st ed. Springer Spektrum Akademischer Verlag",
     "crumbs": [
       "Home",
       "Basics",
-      "Notes on Exploarations of Natural Laws as sensored by the Human Mind"
+      "Phycs Concepts as the Indical Framework for Modelling Economy Systems"
     ]
   },
   {
