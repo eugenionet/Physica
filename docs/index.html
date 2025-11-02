@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -254,11 +274,17 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basics-summary.qmd">Basics</a></li><li class="breadcrumb-item"><a href="./index.html">Notes on exploarations of natural laws sensored by human mind</a></li></ol></nav>
 <div class="quarto-title">
@@ -268,7 +294,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -282,7 +308,7 @@ window.Quarto = {
 
 <p>This is a Quarto website.</p>
 <p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<p>Energy: <span id="eq-eom3DOF"><span class="math display">\[
+<p>Energy: <span class="citation" data-cites="eckhard_theoretische_2006">Eckhard (<a href="#ref-eckhard_theoretische_2006" role="doc-biblioref">2006</a>)</span> <span id="eq-eom3DOF"><span class="math display">\[
 \begin{split}
 &amp;
 E = \overline{W} = E_{trl} + E_{rot} + E_{vbr} + E_{spn} + ... + E_{mix} =  
@@ -323,8 +349,16 @@ h(\nu - \nu_0)
 \tag{3}\]</span></span></p>
 <p>Quest: What is momentum <span class="math inline">\(p\)</span> if there is no mass, <span class="math inline">\(m=0\)</span> ?</p>
 <p>Quest: Is energy <span class="math inline">\(E\)</span> also the cause for mass <span class="math inline">\(m\)</span>, apart from being the ability to do work <span class="math inline">\(W\)</span>, <span class="math inline">\(\Delta E = W = F \cdot x = m \cdot a \cdot x = mx \cdot \frac{dv}{dt} = mx \cdot \frac{d^2x}{dt^2} = M \cdot \frac{d^2x}{dt^2}\)</span> ?</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-eckhard_theoretische_2006" class="csl-entry" role="listitem">
+Eckhard, Rebhan. 2006. <em>Theoretische <span>Physik</span>: <span>Mechanik</span></em>. 1st ed. Vol. 1. Springer Spektrum Akademischer Verlag. <a href="https://link.springer.com/book/9783662452950">https://link.springer.com/book/9783662452950</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
