@@ -500,8 +500,23 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">Keywords</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
+  <li><a href="#energy-eckhard_theoretische_2006" id="toc-energy-eckhard_theoretische_2006" class="nav-link" data-scroll-target="#energy-eckhard_theoretische_2006">Energy <span class="citation" data-cites="eckhard_theoretische_2006">[1]</span>:</a></li>
+  <li><a href="#info" id="toc-info" class="nav-link" data-scroll-target="#info">Info</a>
+  <ul class="collapse">
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#marimo" id="toc-marimo" class="nav-link" data-scroll-target="#marimo">Marimo</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -527,13 +542,21 @@ window.Quarto = {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> marimo <span class="im">as</span> mo </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> mo.ui.slider(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Energy <span class="citation" data-cites="eckhard_theoretische_2006">[<a href="#ref-eckhard_theoretische_2006" role="doc-biblioref">1</a>]</span>: <span id="eq-eom3DOF"><span class="math display">\[
+<section id="abstract" class="level1">
+<h1>Abstract</h1>
+</section>
+<section id="keywords" class="level1">
+<h1>Keywords</h1>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+</section>
+<section id="content" class="level1">
+<h1>Content</h1>
+</section>
+<section id="energy-eckhard_theoretische_2006" class="level1">
+<h1>Energy <span class="citation" data-cites="eckhard_theoretische_2006">[<a href="#ref-eckhard_theoretische_2006" role="doc-biblioref">1</a>]</span>:</h1>
+<p><span id="eq-eom3DOF"><span class="math display">\[
 \begin{split}
 &amp;
 E = \overline{W} = E_{trl} + E_{rot} + E_{vbr} + E_{spn} + ... + E_{mix} =  
@@ -574,9 +597,27 @@ h(\nu - \nu_0)
 \tag{3}\]</span></span></p>
 <p>Quest: What is momentum <span class="math inline">\(p\)</span> if there is no mass, <span class="math inline">\(m=0\)</span> ?</p>
 <p>Quest: Is energy <span class="math inline">\(E\)</span> also the cause for mass <span class="math inline">\(m\)</span>, apart from being the ability to do work <span class="math inline">\(W\)</span>, <span class="math inline">\(\Delta E = W = F \cdot x = m \cdot a \cdot x = mx \cdot \frac{dv}{dt} = mx \cdot \frac{d^2x}{dt^2} = M \cdot \frac{d^2x}{dt^2}\)</span> ?</p>
+</section>
+<section id="info" class="level1">
+<h1>Info</h1>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>This is a Quarto website.</p>
+<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+</section>
+<section id="marimo" class="level2">
+<h2 class="anchored" data-anchor-id="marimo">Marimo</h2>
+<p>https://marimo.io/ https://github.com/marimo-team/marimo https://docs.marimo.io/ https://www.youtube.com/watch?v=dbPj3GOFa-g</p>
+<p>Text Code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> marimo <span class="im">as</span> mo </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> mo.ui.slider(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
 <div id="ref-eckhard_theoretische_2006" class="csl-entry" role="listitem">
