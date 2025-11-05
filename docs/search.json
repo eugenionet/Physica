@@ -64,7 +64,7 @@
     "href": "index.html#info",
     "title": "Physics Concepts as Indicative Framework for Modelling Systems of Economy",
     "section": "Info",
-    "text": "Info\n\nQuarto\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\nMarimo\nhttps://marimo.io/\nhttps://github.com/marimo-team/marimo\nhttps://docs.marimo.io/\nhttps://www.youtube.com/watch?v=dbPj3GOFa-g\n\nTest Code:\nimport marimo as mo \n\nx = mo.ui.slider(1, 10, 1)\nx",
+    "text": "Info\n\nQuarto\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\nMarimo\nhttps://marimo.io/\nhttps://github.com/marimo-team/marimo\nhttps://docs.marimo.io/\nhttps://www.youtube.com/watch?v=dbPj3GOFa-g\n\nTest Code:",
     "crumbs": [
       "Home",
       "Basics",
