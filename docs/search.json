@@ -1,5 +1,24 @@
 [
   {
+    "objectID": "Space_Time_Matter.html",
+    "href": "Space_Time_Matter.html",
+    "title": "Physica",
+    "section": "",
+    "text": "\\[\n\\langle $w$_{EM} \\rangle =\n\\frac{1}{2} \\varepsilon_0 (\\mathscr{E}^2 + c^2 \\mathscr{B}^2 ) =\n\\varepsilon_0 \\mathscr{E}^2 + \\frac{1}{\\mu_0}\\mathscr{B}^2 =\n\\frac{1}{c} \\frac{\\mathscr{E \\cdot B}}{\\mu_0} =\n\\frac{1}{c} \\mathscr{I} =\n\\frac{1}{c} \\langle |\\vec{S}| \\rangle\n\\tag{1}\\]",
+    "crumbs": [
+      "Home",
+      "Overview",
+      "Space Time Matter"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Physics Concepts as Indicative Framework for Modelling Systems of Economy",
@@ -70,12 +89,5 @@
       "Overview",
       "EconoPhys"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]

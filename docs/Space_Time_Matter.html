@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Physics Concepts as Indicative Framework for Modelling Systems of Economy – Physica</title>
+<title>space_time_matter – Physica</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -103,13 +84,41 @@ div.csl-indent {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@marimo-team/islands@0.17.7/dist/main.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@marimo-team/islands@0.17.7/dist/style.css" rel="stylesheet" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&amp;family=Lora&amp;family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
-</head><body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -280,42 +289,7 @@ div.csl-indent {
     } else {
       toggleColorMode(false);
     }
-  </script><marimo-filename hidden=""></marimo-filename>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-
-
-
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -374,7 +348,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview-summary.qmd">Overview</a></li><li class="breadcrumb-item"><a href="./index.html">EconoPhys</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview-summary.qmd">Overview</a></li><li class="breadcrumb-item"><a href="./Space_Time_Matter.html">Space Time Matter</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -415,13 +389,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">EconoPhys</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Space_Time_Matter.html" class="sidebar-item-text sidebar-link">
+  <a href="./Space_Time_Matter.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Space Time Matter</span></a>
   </div>
 </li>
@@ -520,96 +494,16 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">Keywords</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
-  <li><a href="#energy-eckhard_theoretische_2006" id="toc-energy-eckhard_theoretische_2006" class="nav-link" data-scroll-target="#energy-eckhard_theoretische_2006">Energy <span class="citation" data-cites="eckhard_theoretische_2006">[1]</span>:</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a>
-  <ul class="collapse">
-  <li><a href="#marimo" id="toc-marimo" class="nav-link" data-scroll-target="#marimo">Marimo</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview-summary.qmd">Overview</a></li><li class="breadcrumb-item"><a href="./index.html">EconoPhys</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Physics Concepts as Indicative Framework for Modelling Systems of Economy</h1>
-<p class="subtitle lead">Coincise Notes on Explorations and Conjectures of Natural Laws as sensored by the Anthropological Mind to Develop Allocation Structures of Finite Resouces</p>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview-summary.qmd">Overview</a></li><li class="breadcrumb-item"><a href="./Space_Time_Matter.html">Space Time Matter</a></li></ol></nav></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-</section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-</section>
-<section id="keywords" class="level2">
-<h2 class="anchored" data-anchor-id="keywords">Keywords</h2>
-</section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-</section>
-<section id="content" class="level2">
-<h2 class="anchored" data-anchor-id="content">Content</h2>
-</section>
-<section id="energy-eckhard_theoretische_2006" class="level2">
-<h2 class="anchored" data-anchor-id="energy-eckhard_theoretische_2006">Energy <span class="citation" data-cites="eckhard_theoretische_2006">[<a href="#ref-eckhard_theoretische_2006" role="doc-biblioref">1</a>]</span>:</h2>
-<p><span id="eq-eom3DOF"><span class="math display">\[
-\begin{split}
-&amp;
-E = \overline{W} = E_{trl} + E_{rot} + E_{vbr} + E_{spn} + ... + E_{mix} =  
-E_{kin} + E_{pot} =
-E_{Magn} + E_{Elec}
-\\
-&amp;
-\stackrel{continuum}{=}
-\frac{1}{2} kT + \frac{1}{2} kT  =
-kT
-\\
-&amp;
-\stackrel{quantum}{=}
-\hbar\omega =
-h\nu
-\stackrel{distribtion}{=}
-h\nu \frac{1}{e^{\frac{h\nu}{kT}}-1}
-\\
-&amp;
-\stackrel{relativistic}{=}
-\sqrt{ (pc)^2 + (mc^2)^2 } =
-c \cdot \sqrt{ p^2 + (mc)^2 }
-\end{split}
-\tag{1}\]</span></span></p>
-<p><span id="eq-eom3DOF"><span class="math display">\[
-E_{kin}^{max} =
-eV_0 =
-h(\nu - \nu_0)
-\tag{2}\]</span></span></p>
-<p>Average Energy Densitiy (Electromagnetic Intensity and Poynting-Vector): </p>
 <p><span id="eq-eom3DOF"><span class="math display">\[
 \langle $w$_{EM} \rangle =
 \frac{1}{2} \varepsilon_0 (\mathscr{E}^2 + c^2 \mathscr{B}^2 ) =
@@ -617,46 +511,11 @@ h(\nu - \nu_0)
 \frac{1}{c} \frac{\mathscr{E \cdot B}}{\mu_0} =
 \frac{1}{c} \mathscr{I} =
 \frac{1}{c} \langle |\vec{S}| \rangle
-\tag{3}\]</span></span></p>
-<p>Quest: What is momentum <span class="math inline">\(p\)</span> if there is no mass, <span class="math inline">\(m=0\)</span> ?</p>
-<p>Quest: Is energy <span class="math inline">\(E\)</span> also the cause for mass <span class="math inline">\(m\)</span>, apart from being the ability to do work <span class="math inline">\(W\)</span>, <span class="math inline">\(\Delta E = W = F \cdot x = m \cdot a \cdot x = mx \cdot \frac{dv}{dt} = mx \cdot \frac{d^2x}{dt^2} = M \cdot \frac{d^2x}{dt^2}\)</span> ?</p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<section id="marimo" class="level3">
-<h3 class="anchored" data-anchor-id="marimo">Marimo</h3>
-<p>https://marimo.io/<br>
-https://github.com/marimo-team/marimo<br>
-https://docs.marimo.io/<br>
-https://www.youtube.com/watch?v=dbPj3GOFa-g<br>
-</p>
-<p>Test Code:</p>
-<marimo-island data-app-id="main" data-cell-id="Hbol" data-reactive="true">
-    <marimo-cell-output>
-    <marimo-ui-element object-id="Hbol-0" random-id="8d9a3a6c-9a70-95ac-36e3-b1e567525973"><marimo-slider data-initial-value="1" data-label="&quot;<span class=\&quot;markdown prose dark:prose-invert contents\&quot;><span class=\&quot;paragraph\&quot;>Look, a slider!</span></span>&quot;" data-start="1" data-stop="100" data-step="1" data-steps="[]" data-debounce="false" data-disabled="false" data-orientation="&quot;horizontal&quot;" data-show-value="false" data-include-input="false" data-full-width="false"></marimo-slider></marimo-ui-element>
-    </marimo-cell-output>
-    <marimo-ui-element object-id="5e820911-c088-3099-e88a-60c937c2ee82" random-id="5e820911-c088-3099-e88a-60c937c2ee82"><marimo-code-editor data-initial-value="&quot;import marimo as mo\nslider = mo.ui.slider(1, 100, 1, label=\&quot;Look, a slider!\&quot;)\nslider&quot;" data-label="null" data-language="&quot;python&quot;" data-placeholder="&quot;&quot;" data-disabled="false" data-show-copy-button="true" data-debounce="false"></marimo-code-editor></marimo-ui-element>
-</marimo-island>
-<p>More things:</p>
-<p>And we can respond!</p>
-<marimo-island data-app-id="main" data-cell-id="MJUe" data-reactive="true">
-    <marimo-cell-output>
-    <marimo-mime-renderer data-mime="&quot;text/markdown&quot;" data-data="&quot;<span class=\&quot;markdown prose dark:prose-invert contents\&quot;><span class=\&quot;paragraph\&quot;>NaN Batman!</span></span>&quot;"></marimo-mime-renderer>
-    </marimo-cell-output>
-    <marimo-cell-code hidden="">%23%20No%20echo%20here%20means%20we%20do%20not%20show%20the%20code%0Amo.md(%22NaN%22%20*%20slider.value%20%2B%20%22%20Batman!%22)</marimo-cell-code>
-</marimo-island>
+\tag{1}\]</span></span></p>
 
 
 
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-eckhard_theoretische_2006" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Eckhard R (2006) <a href="https://link.springer.com/book/9783662452950">Theoretische <span>Physik</span>: <span>Mechanik</span></a>, 1st ed. Springer Spektrum Akademischer Verlag</div>
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
