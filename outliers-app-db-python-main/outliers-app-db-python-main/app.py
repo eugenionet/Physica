@@ -9,11 +9,6 @@ import ibis
 from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
-import markdown
-md_options = ['mathjax',
-              'eqnmath',
-              'alignmath']
-html = markdown.Markdown(extensions=md_options).convert(markdown)
 
 
 # Initialize the Ibis connection
@@ -38,7 +33,7 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $\sum$ 2")
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $\sum$ 23")
 
 with ui.layout_columns():
 
