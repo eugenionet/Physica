@@ -9,6 +9,10 @@ import ibis
 from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
+import markdown
+try: import mdx_mathjax
+except: pass
+mdProcessor = markdown.Markdown(extensions=['mathjax'])
 
 
 # Initialize the Ibis connection
