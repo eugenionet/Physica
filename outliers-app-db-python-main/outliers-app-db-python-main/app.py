@@ -9,6 +9,7 @@ import ibis
 from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
+import markdown
 
 
 # Initialize the Ibis connection
