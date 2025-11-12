@@ -11,8 +11,6 @@ from faicons import icon_svg
 import helpers
 
 
-$\sum$
-
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
 
@@ -36,6 +34,7 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 outliers = outliers.to_pandas()
 
 ui.page_opts(fillable=True, title="Identify suspicious values in air quality data")
+$\sum$
 with ui.layout_columns():
 
     with ui.card():
