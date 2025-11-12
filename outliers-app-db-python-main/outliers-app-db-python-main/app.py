@@ -9,6 +9,11 @@ import ibis
 from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
+import markdown
+md_options = ['mathjax',
+              'eqnmath',
+              'alignmath']
+html = markdown.Markdown(extensions=md_options).convert(markdown)
 
 
 # Initialize the Ibis connection
