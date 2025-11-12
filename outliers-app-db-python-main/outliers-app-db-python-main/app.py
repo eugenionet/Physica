@@ -33,8 +33,8 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data")
-$\sum$
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $\sum$")
+
 with ui.layout_columns():
 
     with ui.card():
@@ -82,7 +82,7 @@ with ui.layout_columns():
             ui.card_header("About this app", class_="bg-light")
             
             ui.markdown(
-                """ This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
+                """ $\sum$ This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
                 The values shown in blue represent rows where `PPM` (ozone level in parts-per-million) was an outlier, 
                 identified using the [IQR method](https://en.wikipedia.org/wiki/Interquartile_range#Outliers). 
                 Some of these values are real, but some are errors, created for the purposes of this app.  
