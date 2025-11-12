@@ -33,7 +33,7 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $\sum$ 23")
+# ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $\sum$ 23")
 ui.page_opts(fillable=True, title=dict(text=r'$\text{Google} = a^{2 } + ab + b^{2}$'))
 
 with ui.layout_columns():
