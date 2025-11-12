@@ -33,8 +33,8 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data XXXXXXXX $\sum$")
-
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data")
+$\sum$
 with ui.layout_columns():
 
     with ui.card():
