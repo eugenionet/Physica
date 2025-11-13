@@ -9,6 +9,16 @@ from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
 
+import pandas as pd
+import seaborn as sns
+from shared import mathjax, prose, restrict_width
+# Import MathJax for LaTeX rendering
+mathjax
+
+# Explanation and Explore prose
+with restrict_width(sm=10, md=10, lg=6):
+    prose
+    
 
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
