@@ -89,7 +89,7 @@ with ui.layout_columns():
             ui.input_action_button("write_data", "Write to database", width="40%")
         
         with ui.card():
-            ui.card_header("About this app", class_="bg-light")
+            ui.card_header("About this app '$\sum$'", class_="bg-light")
             
             ui.markdown(
                 """ This sentence uses $\` and \`$ delimiters to show math inline: $`\sqrt{3x-1}+(1+x)^2`$ --- This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
