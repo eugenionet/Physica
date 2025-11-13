@@ -16,8 +16,8 @@ from shared import mathjax, prose, restrict_width
 mathjax
 
 # Explanation and Explore prose
-with restrict_width(sm=10, md=10, lg=6):
-    prose
+#with restrict_width(sm=10, md=10, lg=6):
+prose
     
 
 # Initialize the Ibis connection
