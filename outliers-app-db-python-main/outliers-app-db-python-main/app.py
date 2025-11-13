@@ -81,7 +81,6 @@ with ui.layout_columns():
             ui.card_header("About this app", class_="bg-light")
             
             ui.markdown(
-                withMathJax($$\\sum$$) 
                 """ This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
                 The values shown in blue represent rows where `PPM` (ozone level in parts-per-million) was an outlier, 
                 identified using the [IQR method](https://en.wikipedia.org/wiki/Interquartile_range#Outliers). 
