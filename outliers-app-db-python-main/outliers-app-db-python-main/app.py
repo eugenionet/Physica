@@ -90,9 +90,10 @@ with ui.layout_columns():
         
         with ui.card():
             ui.card_header("About this app", class_="bg-light")
+
+            This sentence uses `$` delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
             
             ui.markdown(
-                "\\$\sum$"
                 """ $$\sum$$ This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
                 The values shown in blue represent rows where `PPM` (ozone level in parts-per-million) was an outlier, 
                 identified using the [IQR method](https://en.wikipedia.org/wiki/Interquartile_range#Outliers). 
