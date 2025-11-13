@@ -11,7 +11,7 @@ import helpers
 
 import pandas as pd
 import seaborn as sns
-from shared import mathjax, prose, restrict_width
+#from shared import mathjax, prose, restrict_width
 
 # Import MathJax for LaTeX rendering
 #mathjax
