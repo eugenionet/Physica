@@ -3,7 +3,7 @@ from shiny.express import input, ui, render, session
 from shiny import reactive
 from shinywidgets import render_plotly 
 import plotly.express as px
-import pandas as pd
+# import pandas as pd
 import ibis
 from plotly.callbacks import Points
 from faicons import icon_svg
