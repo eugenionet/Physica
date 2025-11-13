@@ -12,7 +12,7 @@ import markdown
 md_options = ['mathjax',
               'eqnmath',
               'alignmath']
-html = markdown.Markdown(extensions=md_options).convert(markdown)
+# html = markdown.Markdown(extensions=md_options).convert(markdown)
 
 
 # Initialize the Ibis connection
