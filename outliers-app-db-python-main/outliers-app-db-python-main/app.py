@@ -9,9 +9,6 @@ from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
 
-import markdown
-import math
-
 
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
