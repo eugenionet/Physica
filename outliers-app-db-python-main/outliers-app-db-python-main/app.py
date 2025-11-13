@@ -10,6 +10,7 @@ from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
 
+withMathJax()
 
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
@@ -33,7 +34,7 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $$\sum$$ 3")
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $$\\sum$$ 3")
 
 with ui.layout_columns():
 
