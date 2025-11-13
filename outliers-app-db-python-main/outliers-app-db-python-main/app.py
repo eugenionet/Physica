@@ -1,4 +1,3 @@
-# app.py
 
 from shiny.express import input, ui, render, session
 from shiny import reactive
@@ -10,7 +9,6 @@ from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
 
-withMathJax()
 
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
@@ -83,7 +81,7 @@ with ui.layout_columns():
             ui.card_header("About this app", class_="bg-light")
             
             ui.markdown(
-                """ $$\\sum$$ This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
+                """ withMathJax($$\\sum$$) This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
                 The values shown in blue represent rows where `PPM` (ozone level in parts-per-million) was an outlier, 
                 identified using the [IQR method](https://en.wikipedia.org/wiki/Interquartile_range#Outliers). 
                 Some of these values are real, but some are errors, created for the purposes of this app.  
