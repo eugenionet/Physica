@@ -15,6 +15,7 @@ from shared import mathjax, mathjax_foot, prose, restrict_width
 
 # Import MathJax for LaTeX rendering
 mathjax
+mathjax_foot
 
 # Explanation and Explore prose
 #with restrict_width(sm=10, md=10, lg=6):
@@ -54,7 +55,6 @@ with ui.layout_columns():
             ),
             class_="bg-light"
         )
-        mathjax_foot
 
         with ui.layout_columns():
             ui.input_select("x", "X-axis variable:", choices=["Date", "PPM", "AQI"])
