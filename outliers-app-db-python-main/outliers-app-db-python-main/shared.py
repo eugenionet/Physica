@@ -21,8 +21,8 @@ def restrict_width(*args, sm=None, md=None, lg=None, pad_y=5, **kwargs):
 # Allow LaTeX to be displayed via MathJax
 mathjax = ui.head_content(
     ui.tags.script(
-        #src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
+        src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        #src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
     ),
     ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
 )
