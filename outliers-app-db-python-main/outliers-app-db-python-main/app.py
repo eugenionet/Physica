@@ -159,6 +159,3 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
-
-mathjax
-
