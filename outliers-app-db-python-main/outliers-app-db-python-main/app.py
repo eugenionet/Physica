@@ -92,7 +92,7 @@ with ui.layout_columns():
             ui.card_header("About this app ( \sqrt{3x-1}+(1+x)^2 \) ", class_="bg-light")
             
             ui.markdown(
-                \text("\( \sqrt{3x-1}+(1+x)^2 \)")
+               ""\( \sqrt{3x-1}+(1+x)^2 \)""
                 """ This sentence uses \( delimiters to show math inline: --- This app uses ozone data from the [EPA](https://www.epa.gov/outdoor-air-quality-data). 
                 The values shown in blue represent rows where `PPM` (ozone level in parts-per-million) was an outlier, 
                 identified using the [IQR method](https://en.wikipedia.org/wiki/Interquartile_range#Outliers). 
