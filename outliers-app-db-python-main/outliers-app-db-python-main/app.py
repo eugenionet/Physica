@@ -11,7 +11,7 @@ import helpers
 
 import pandas as pd
 #import seaborn as sns
-from shared import mathjax, prose, restrict_width
+from shared import mathjax, mathjax_foot, prose, restrict_width
 
 # Import MathJax for LaTeX rendering
 mathjax
@@ -54,6 +54,7 @@ with ui.layout_columns():
             ),
             class_="bg-light"
         )
+        mathjax_foot
 
         with ui.layout_columns():
             ui.input_select("x", "X-axis variable:", choices=["Date", "PPM", "AQI"])
