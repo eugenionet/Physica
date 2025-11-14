@@ -43,7 +43,7 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data $$\sqrt{3x-1}+(1+x)^2$$")
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \(\sqrt{3x-1}+(1+x)^2\)")
 
 with ui.layout_columns():
 
