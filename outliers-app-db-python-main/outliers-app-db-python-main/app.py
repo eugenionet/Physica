@@ -28,6 +28,7 @@ con = ibis.duckdb.connect(database=':memory:')
 helpers.initialize_database(con, "data/ozone.duckdb", "ozone")
 
 ozone = con.table("ozone").rename(
+    mathjax
     {
         "ID":"id",
         "State": "state_name",
