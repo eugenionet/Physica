@@ -89,7 +89,7 @@ with ui.layout_columns():
             ui.input_action_button("write_data", "Write to database", width="40%")
         
         with ui.card():
-            ui.card_header("About this app ( \sqrt{3x-1}+(1+x)^2 \) ", class_="bg-light")
+            ui.card_header("About this app \( \sqrt{3x-1}+(1+x)^2 \) ", class_="bg-light")
             
             ui.markdown(
                ""\( \sqrt{3x-1}+(1+x)^2 \)""
