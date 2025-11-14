@@ -15,7 +15,7 @@ from shared import mathjax, mathjax_foot, prose, restrict_width
 
 # Import MathJax for LaTeX rendering
 mathjax
-mathjax_foot
+#mathjax_foot
 
 # Explanation and Explore prose
 #with restrict_width(sm=10, md=10, lg=6):
