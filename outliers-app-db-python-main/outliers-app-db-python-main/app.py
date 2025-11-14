@@ -76,7 +76,7 @@ with ui.layout_columns():
         with ui.card():
             ui.card_header(
                 ui.markdown(
-                    f"{icon_svg('circle-info')} \(\sum\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
+                    f"{icon_svg('circle-info')} \\(\sum\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
                 ),
                 class_="bg-light"
             )
