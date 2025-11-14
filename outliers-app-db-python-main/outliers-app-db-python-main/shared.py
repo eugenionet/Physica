@@ -2,6 +2,11 @@ from pathlib import Path
 
 from shiny import ui
 
+from shared import mathjax
+ # Import MathJax for LaTeX rendering
+mathjax
+
+
 app_dir = Path(__file__).parent
 
 
