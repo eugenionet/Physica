@@ -29,7 +29,7 @@ def create_outliers_table(table, col):
 
 def initialize_database(con, source_db, table_name):
     source_con = ibis.duckdb.connect(database=source_db)
-    mathjax
+    mathjax()
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
     source_con.disconnect()
