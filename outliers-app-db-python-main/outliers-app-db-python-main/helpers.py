@@ -6,9 +6,9 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 
-#from shared import mathjax
+from shared import mathjax
  # Import MathJax for LaTeX rendering
-#mathjax
+mathjax
     
 
 def create_outliers_table(table, col):
