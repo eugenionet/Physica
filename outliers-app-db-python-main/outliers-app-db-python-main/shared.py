@@ -32,7 +32,7 @@ mathjax = ui.head_content(
             }
         });
     ),
-    ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
+    #ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
 )
 
 
