@@ -27,8 +27,7 @@ def create_outliers_table(table, col):
     
     return outliers, ozone
 
-def initialize_database(con, source_db, table_name): 
-    mathjax
+def initialize_database(con, source_db, table_name):
     source_con = ibis.duckdb.connect(database=source_db)
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
