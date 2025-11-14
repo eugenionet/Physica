@@ -28,5 +28,12 @@ mathjax = ui.head_content(
     ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
 )
 
+mathjax_foot = ui.footer_content(
+    ui.tags.script(
+        src="https://code.jquery.com/jquery-3.7.1.min.js", integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=", crossorigin="anonymous",
+        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js", integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz", crossorigin="anonymous"
+    ),
+)
+
 
 prose = ui.markdown(open(app_dir / "prose.md").read())
