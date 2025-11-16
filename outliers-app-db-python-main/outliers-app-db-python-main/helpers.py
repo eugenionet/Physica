@@ -1,4 +1,4 @@
-# helpers.py
+# helpers.pymathjax
 
 from shiny.express import ui, render
 import ibis
