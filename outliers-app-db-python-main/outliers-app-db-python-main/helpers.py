@@ -75,13 +75,13 @@ def plot_ozone(x, y, ozone, outliers):
 
 def create_editable_table(df):
     df["Date"] = df.Date.astype("string")
+    mathjax
     return render.DataGrid(
         df,
         editable=True,
         selection_mode="rows",
         summary=False,
         styles={"style": {"font-size": "16px", "padding-top": "12px", "padding-bottom": "12px"}}
-        mathjax
     )
 
 def find_row_number(points, editable_table):
