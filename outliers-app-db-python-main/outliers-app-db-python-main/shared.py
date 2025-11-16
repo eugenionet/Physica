@@ -26,7 +26,7 @@ mathjax = ui.head_content(
         src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML",
     ),
     ui.tags.script(
-        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
+        defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
     ),
     ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
         ui.tags.script(
