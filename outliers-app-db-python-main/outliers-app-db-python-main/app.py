@@ -83,6 +83,7 @@ with ui.layout_columns():
         
             @render.data_frame
             def outliers_editable():
+                mathjax
                 # outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
 
