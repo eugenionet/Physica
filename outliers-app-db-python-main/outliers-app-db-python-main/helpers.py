@@ -28,7 +28,6 @@ def create_outliers_table(table, col):
     return outliers, ozone
 
 def initialize_database(con, source_db, table_name):
-    mathjax
     source_con = ibis.duckdb.connect(database=source_db)
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
@@ -82,6 +81,7 @@ def create_editable_table(df):
         selection_mode="rows",
         summary=False,
         styles={"style": {"font-size": "16px", "padding-top": "12px", "padding-bottom": "12px"}}
+        mathjax
     )
 
 def find_row_number(points, editable_table):
