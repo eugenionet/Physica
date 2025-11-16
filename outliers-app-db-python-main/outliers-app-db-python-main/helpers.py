@@ -75,7 +75,6 @@ def plot_ozone(x, y, ozone, outliers):
 
 def create_editable_table(df):
     df["Date"] = df.Date.astype("string")
-    mathjax
     return render.DataGrid(
         df,
         editable=True,
