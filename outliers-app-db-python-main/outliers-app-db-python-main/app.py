@@ -80,7 +80,6 @@ with ui.layout_columns():
                 ui.markdown(
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
                 ),
-                ui.card_footer("This is the footer"),
                 class_="bg-light"
             )
         
@@ -88,7 +87,8 @@ with ui.layout_columns():
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
-
+            
+            ui.card_footer("This is the footer"),
             ui.input_action_button("write_data", "Write to database", width="40%")
         
         with ui.card():
