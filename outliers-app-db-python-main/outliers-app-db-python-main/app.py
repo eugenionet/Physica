@@ -46,6 +46,7 @@ outliers = outliers.to_pandas()
 ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \( \sqrt{3x-1}+(1+x)^2 \) ")
 
 with ui.layout_columns():
+    mathjax
 
     with ui.card():
         ui.card_header(
