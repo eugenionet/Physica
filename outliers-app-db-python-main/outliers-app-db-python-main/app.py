@@ -29,7 +29,7 @@ con = ibis.duckdb.connect(database=':memory:')
 # Read initial data and initialize the table
 helpers.initialize_database(con, "data/ozone.duckdb", "ozone")
 
-ozone = con.table("ozone .mode latex").rename(
+ozone = con.table("ozone").rename(
     {
         "ID":"id",
         "State": "state_name",
