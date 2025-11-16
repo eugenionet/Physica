@@ -33,7 +33,7 @@ mathjax = ui.head_content(
           };
           ),
     ui.tags.script(
-        defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
+        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
     ),
 )
 
