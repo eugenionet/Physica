@@ -9,11 +9,11 @@ from plotly.callbacks import Points
 from faicons import icon_svg
 import helpers
 
-import markdown
-
 import pandas as pd
 #import seaborn as sns
 from shared import mathjax, prose, restrict_width
+
+#import markdown
 
 # Import MathJax for LaTeX rendering
 mathjax
@@ -86,9 +86,7 @@ with ui.layout_columns():
             @render.data_frame
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
-                #return helpers.create_editable_table(outliers)
-                html = return helpers.create_editable_table(outliers).markdown.markdown()
-                html
+                return helpers.create_editable_table(outliers)
 
             ui.input_action_button("write_data", "Write to database", width="40%")
         
