@@ -26,11 +26,6 @@ mathjax = ui.head_content(
         src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML",
     ),
     ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
-            MathJax = {
-            tex: {inlineMath: {'[+]': [['$', '$']]}},
-            svg: {fontCache: 'global'}
-          };
-        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
 )
 
 prose = ui.markdown(open(app_dir / "prose.md").read())
