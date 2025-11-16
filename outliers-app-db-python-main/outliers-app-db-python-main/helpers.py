@@ -18,7 +18,6 @@ def create_outliers_table(table, col):
     q3 = table[col].quantile(0.75) 
 
     # Create conditions for outliers and non-outliers
-    mathjax
     outlier_condition = (table[col] > (q3 + iqr_bound)) | (table[col] < (q1 - iqr_bound))
     non_outlier_condition = (table[col] <= (q3 + iqr_bound)) & (table[col] >= (q1 - iqr_bound))
 
@@ -32,6 +31,7 @@ def initialize_database(con, source_db, table_name):
     source_con = ibis.duckdb.connect(database=source_db)
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
+    mathjax
     source_con.disconnect()
 
 def validate_patch(patch, original_value):
