@@ -24,6 +24,11 @@ mathjax = ui.head_content(
     ui.tags.script(
         #src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js",
         src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML",
+        MathJax = {
+            tex: {inlineMath: {'[+]': [['$', '$']]}},
+            svg: {fontCache: 'global'}
+          };
+        defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js",
     ),
     ui.tags.script("if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"),
 )
