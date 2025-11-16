@@ -46,7 +46,6 @@ outliers = outliers.to_pandas()
 ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \( \sqrt{3x-1}+(1+x)^2 \) ")
 
 with ui.layout_columns():
-    mathjax
 
     with ui.card():
         ui.card_header(
@@ -75,6 +74,7 @@ with ui.layout_columns():
     
     with ui.layout_column_wrap(width=1, heights_equal="row"):
         with ui.card():
+        mathjax
             ui.card_header(
                 ui.markdown(
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
