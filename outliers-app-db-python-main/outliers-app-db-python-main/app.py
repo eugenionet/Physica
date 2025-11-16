@@ -87,8 +87,6 @@ with ui.layout_columns():
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
-            
-            ui.card_footer(src="https://code.jquery.com/jquery-3.7.1.min.js"),
             ui.input_action_button("write_data", "Write to database", width="40%")
         
         with ui.card():
