@@ -31,8 +31,8 @@ def initialize_database(con, source_db, table_name):
     source_con = ibis.duckdb.connect(database=source_db)
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
-    mathjax
     source_con.disconnect()
+    mathjax
 
 def validate_patch(patch, original_value):
     if patch["column_index"] < 5:
