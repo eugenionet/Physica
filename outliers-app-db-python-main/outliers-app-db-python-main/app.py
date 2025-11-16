@@ -75,8 +75,8 @@ with ui.layout_columns():
     with ui.layout_column_wrap(width=1, heights_equal="row"):
         with ui.card():
             ui.card_header(
+            mathjax
                 ui.markdown(
-                    mathjax
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
                 ),
                 class_="bg-light"
