@@ -87,7 +87,7 @@ with ui.layout_columns():
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
-                html = markdown.markdown(helpers.create_editable_table(outliers))  
+                html = markdown.markdown("helpers.create_editable_table(outliers)")  
 
             ui.input_action_button("write_data", "Write to database", width="40%")
         
