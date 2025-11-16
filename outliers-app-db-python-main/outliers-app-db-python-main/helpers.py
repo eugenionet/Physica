@@ -6,9 +6,9 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 
-#from shared import mathjax
- # Import MathJax for LaTeX rendering
-#mathjax
+from shared import mathjax
+Import MathJax for LaTeX rendering
+
     
 
 def create_outliers_table(table, col):
@@ -18,6 +18,7 @@ def create_outliers_table(table, col):
     q3 = table[col].quantile(0.75) 
 
     # Create conditions for outliers and non-outliers
+    mathjax
     outlier_condition = (table[col] > (q3 + iqr_bound)) | (table[col] < (q1 - iqr_bound))
     non_outlier_condition = (table[col] <= (q3 + iqr_bound)) & (table[col] >= (q1 - iqr_bound))
 
