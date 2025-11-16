@@ -80,8 +80,8 @@ with ui.layout_columns():
                 ui.markdown(
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
                 ),
+                ui.card_footer("This is the footer"),
                 class_="bg-light"
-                mathjax
             )
         
             @render.data_frame
