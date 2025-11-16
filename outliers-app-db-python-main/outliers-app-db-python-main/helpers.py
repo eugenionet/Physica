@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 from shared import mathjax
-Import MathJax for LaTeX rendering
+#Import MathJax for LaTeX rendering
 
     
 
