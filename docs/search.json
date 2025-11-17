@@ -16,7 +16,7 @@
     "href": "Lagrange-Hamilton.html",
     "title": "Physica",
     "section": "",
-    "text": "\\[\\begin{split} &\nW = F \\cdot r = mr \\cdot a = M ⋅ \\frac{v}{t} = Fvt = \\frac{p}{t} ⋅ vt = mv^2 = pv = \\mathcal{L} + \\mathcal{H} \\\\&\n= ħω ⋅... = ℎν ⋅... = E ⋅ ...     \\\\&\n= ΔE + ΔQ =   ...  \\\\&\n= \\mathcal{L} = E_{kin} - E_{pot} = K - U = K - (V + D) = pv - (K + U) = pv - \\mathcal{H}    \\\\&\n= \\nabla S = ∇(E \\cdot t) = ∇(p ⋅ r) = ∇\\left( \\frac{W}{v} ⋅ r \\right)\n\\end{split}\\]",
+    "text": "\\[\\begin{split} &\nW = F \\cdot r = mr \\cdot a = M ⋅ \\frac{v}{t} = Fvt = \\frac{p}{t} ⋅ vt = mv^2 = pv = \\mathcal{L} + \\mathcal{H} \\\\&\n= \\mathcal{L} = E_{kin} - E_{pot} = K - U = K - (V + D) = pv - (K + U) = pv - \\mathcal{H}    \\\\&\n= ħω ⋅... = ℎν ⋅... = E ⋅ ...     \\\\&\n= ΔE + ΔQ =   ...  \\\\&\n= \\nabla S = ∇(E \\cdot t) = ∇(p ⋅ r) = ∇\\left( \\frac{W}{v} ⋅ r \\right)\n\\end{split}\\]",
     "crumbs": [
       "Home",
       "Overview",
