@@ -84,7 +84,7 @@ with ui.layout_columns():
                 class_="bg-light"
             )
 
-
+        with ui.markdown():
             @render.data_frame
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
