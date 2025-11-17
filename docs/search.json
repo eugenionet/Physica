@@ -12,6 +12,25 @@
     ]
   },
   {
+    "objectID": "Lagrange-Hamilton.html",
+    "href": "Lagrange-Hamilton.html",
+    "title": "Physica",
+    "section": "",
+    "text": "$ W = F r = mr a = M ⋅ = Fvt = ⋅ vt = mv^2 \\ = pv = ħω ⋅… = ℎν ⋅… = E ⋅ … = \\ = ΔE + ΔQ = \\ = = E_{kin} - E_{pot} = K - U = K - (V + D) = pv - (K + U) = pv - \\ = S = ∇(E t) = ∇(p ⋅ r) = ∇( ⋅ r) $",
+    "crumbs": [
+      "Home",
+      "Overview",
+      "Lagrange-Hamilton"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Physics Concepts as Indicative Framework for Modelling Systems of Economy",
@@ -84,22 +103,10 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "Lagrange-Hamilton.html",
-    "href": "Lagrange-Hamilton.html",
+    "objectID": "outliers-app-db-python-main/outliers-app-db-python-main/prose.html",
+    "href": "outliers-app-db-python-main/outliers-app-db-python-main/prose.html",
     "title": "Physica",
     "section": "",
-    "text": "$ W = F r = mr a = M ⋅ = Fvt = ⋅ vt = mv^2 \\ = pv = ħω ⋅… = ℎν ⋅… = E ⋅ … = \\ = ΔE + ΔQ = \\ = = E_{kin} - E_{pot} = K - U = K - (V + D) = pv - (K + U) = pv - \\ = S = ∇(E t) = ∇(p ⋅ r) = ∇( ⋅ r) $",
-    "crumbs": [
-      "Home",
-      "Overview",
-      "Lagrange-Hamilton"
-    ]
+    "text": "Explanation\n\\[MSE = \\\\frac{1}{n} \\\\sum_{i=1}^{n} (Y_i - \\hat{Y}_i)^2\\]\n$\\(LASSO = \\\\frac{1}{n} \\\\sum_{i=1}^{n} (Y_i - \\hat{Y}\\_i)^2 + \\\\lambda \\\\underbrace{\\\\sum\\_{j=1}^{p} |\\\\beta_j|}_\\\\text{penalty}\\)$\n\\[Ridge = \\\\frac{1}{n} \\\\sum_{i=1}^{n} (Y_i - \\hat{Y}\\_i)^2 + \\\\lambda \\\\underbrace{\\\\sum\\_{j=1}^{p} \\\\beta_j^2}_\\\\text{penalty}\\]\n\\[\\\\lambda \\\\text{is the regularization strength.}\\]"
   }
 ]
