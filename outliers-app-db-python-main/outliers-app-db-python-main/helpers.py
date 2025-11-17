@@ -77,7 +77,7 @@ def plot_ozone(x, y, ozone, outliers):
 def create_editable_table(df):
     df["Date"] = df.Date.astype("string")
     return render.DataGrid(
-        df,
+        ui.markdown(df),
         editable=True,
         selection_mode="rows",
         summary=False,
