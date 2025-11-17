@@ -75,14 +75,13 @@ with ui.layout_columns():
             if len(points.point_inds) > 0:
                 pt_selected.set(points)
     
-    with ui.markdown( ui.layout_column_wrap(width=1, heights_equal="row"):
+    with ui.layout_column_wrap(width=1, heights_equal="row"):
         with ui.card():
             ui.card_header(
                 ui.markdown(
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
                 ),
                 class_="bg-light"
-            )
             )
 
 
