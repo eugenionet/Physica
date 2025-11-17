@@ -29,8 +29,7 @@ con = ibis.duckdb.connect(database=':memory:')
 # Read initial data and initialize the table
 helpers.initialize_database(con, "data/ozone.duckdb", "ozone")
 
-ozone = ui.markdown(
-    con.table("ozone").rename(
+ozone = con.table("ozone").rename(
     {
         "ID":"id",
         "State": "state_name",
@@ -40,7 +39,7 @@ ozone = ui.markdown(
         "Flag": "flag",
     }
 ).select(["ID", "State", "Date", "PPM", "AQI", "Flag"])
-)
+
 
 ozone = ozone.mutate(Flag=ozone.Flag.cast('string'))
 outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
