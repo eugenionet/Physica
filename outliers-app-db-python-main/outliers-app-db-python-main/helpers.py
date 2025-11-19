@@ -6,9 +6,9 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 
-#from shared import mathjax
+from shared.py import mathjax
 #Import MathJax for LaTeX rendering
-#mathjax
+mathjax
 
     
 
@@ -32,6 +32,7 @@ def initialize_database(con, source_db, table_name):
     source_con = ibis.duckdb.connect(database=source_db)
     table = source_con.table(table_name).execute()
     con.create_table(table_name, table)
+    mathjax
     source_con.disconnect()
 
 def validate_patch(patch, original_value):
@@ -96,3 +97,4 @@ def find_row_number(points, editable_table):
     df_inds = [flag_inds[i] for i in point_inds if i < len(flag_inds)]
     id = df.loc[df_inds, "ID"].values[0]
     return df_original[df_original["ID"] == id].index.values.astype(int)[0].item()
+
