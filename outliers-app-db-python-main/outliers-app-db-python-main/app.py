@@ -86,7 +86,6 @@ with ui.layout_columns():
 
             @render.data_frame
             def outliers_editable():
-                mathjax
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
                 
@@ -163,4 +162,5 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
