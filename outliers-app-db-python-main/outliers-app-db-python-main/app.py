@@ -87,7 +87,7 @@ with ui.layout_columns():
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
                 
-            ui.input_action_button("write_data", "Write to database \\\(\sum\\\)", width="40%")
+            ui.input_action_button("write_data", "Write to database", width="40%")
         
         with ui.card():
             ui.card_header("About this app \( \sqrt{3x-1}+(1+x)^2 \) ", class_="bg-light")
@@ -160,6 +160,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
