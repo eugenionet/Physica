@@ -19,12 +19,6 @@ from shared import mathjax, prose, restrict_width
 # Import MathJax for LaTeX rendering
 mathjax
 
-import markdown
-try: import mdx_mathjax
-except: pass
-mdProcessor = markdown.Markdown(extensions=['mathjax'])
-myHtmlFragment = mdProcessor.convert(r"Euler's identity, $e^{i\pi} = -1$, is widely considered the most beautiful theorem in mathematics.")
-
 # Explanation and Explore prose
 #with restrict_width(sm=10, md=10, lg=6):
 #    prose
@@ -169,6 +163,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
