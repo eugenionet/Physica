@@ -14,7 +14,7 @@ import pandas as pd
 from shared import mathjax, prose, restrict_width
 
 #import matplotlib
-#import markdown
+import markdown
 
 # Import MathJax for LaTeX rendering
 mathjax
@@ -163,6 +163,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
