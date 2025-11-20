@@ -85,10 +85,11 @@ with ui.layout_columns():
                 class_="bg-light"
             )
 
-            @render.data_frame
+            @render.data_frame.markdown(
             def outliers_editable():
                 outliers["Date"] = outliers.Date.astype("string")
                 return helpers.create_editable_table(outliers)
+            )
                 
             ui.input_action_button("write_data", "Write to database", width="40%")
         
@@ -163,6 +164,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
