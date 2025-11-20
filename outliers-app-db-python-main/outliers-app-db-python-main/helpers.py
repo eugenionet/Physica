@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 import duckdb
-import matplotlib
+#import matplotlib
 #matplotlib.use('TkAgg')
 
 #from shared import mathjax
@@ -100,6 +100,7 @@ def find_row_number(points, editable_table):
     df_inds = [flag_inds[i] for i in point_inds if i < len(flag_inds)]
     id = df.loc[df_inds, "ID"].values[0]
     return df_original[df_original["ID"] == id].index.values.astype(int)[0].item()
+
 
 
 
