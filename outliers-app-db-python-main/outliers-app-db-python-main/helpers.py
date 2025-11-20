@@ -80,7 +80,7 @@ def plot_ozone(x, y, ozone, outliers):
 
 def create_editable_table(df):
     df["Date"] = df.Date.astype("string")
-    return render.DataGrid.markdown(
+    return render.DataGrid(
         df,
         editable=True,
         selection_mode="rows",
@@ -100,6 +100,7 @@ def find_row_number(points, editable_table):
     df_inds = [flag_inds[i] for i in point_inds if i < len(flag_inds)]
     id = df.loc[df_inds, "ID"].values[0]
     return df_original[df_original["ID"] == id].index.values.astype(int)[0].item()
+
 
 
 
