@@ -13,8 +13,6 @@ import pandas as pd
 #import seaborn as sns
 from shared import mathjax, prose, restrict_width
 
-#import markdown
-
 # Import MathJax for LaTeX rendering
 mathjax
 
@@ -162,3 +160,23 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
