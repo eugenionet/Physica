@@ -557,7 +557,7 @@ window.Quarto = {
 <p><span class="math display">\[\begin{split} &amp;
 W = \partial A = \partial(E \cdot t) = \partial(p ⋅ r) = \partial\left( \frac{W}{v} ⋅ r \right)  \\&amp;
 \stackrel{Newtonian}{=} F \cdot r = mr \cdot a = I ⋅ \frac{v}{t} =  \frac{p}{t} ⋅ tv = Ft \cdot v =  pv = mv^2 \\&amp;
-\stackrel{Hamiltonian}{=} \mathcal{L} + \mathcal{H} = (E_{kin} - E_{pot}) + (E_{kin} + E_{pot}) = (\mathcal{K} - \mathcal{U}) + (\mathcal{K} + \mathcal{U}) = (\mathcal{K} - (\mathcal{V} + \mathcal{D})) + (\mathcal{K} + \mathcal{U}) = (\mathcal{K} - \mathcal{U}) + E   \\&amp;
+\stackrel{Hamiltonian}{=} \mathcal{L} + \mathcal{H} = (E_{kin} - E_{pot}) + (E_{kin} + E_{pot}) = (\mathcal{K} - \mathcal{U}) + (\mathcal{K} + \mathcal{U}) = (\mathcal{K} - (\mathcal{V} + \mathcal{Z})) + (\mathcal{K} + \mathcal{U}) = (\mathcal{K} - \mathcal{U}) + E   \\&amp;
 \stackrel{ElectroMagnetic}{=}  \left( \frac{1}{2}mv^2 - q(\Phi - \vec{\mathcal{A}} \cdot \vec{v}) \right) + \left( \frac{1}{2} \frac{1}{m} (\vec{p} - q\vec{\mathcal{A}})^2 + q\Phi \right)   \\&amp;
 \stackrel{Relativistic}{=} \frac{v}{c} \sqrt{E^2 - (mc^2)^2}   \\&amp;
 \stackrel{Thermal}{=} ΔY + ΔH = PV = T \cdot V^{\frac{f+2}{f}} = T \cdot V^{(\frac{c_P}{c_V}-1)} = T \cdot V^{\kappa-1} = T \cdot N \cdot b_0 = T \cdot l \cdot g_0 = T \cdot m \cdot c_0    \\&amp;
@@ -603,24 +603,24 @@ td, th {
 <td><span class="math inline">\(I =\)</span> Inertia</td>
 <td><span class="math inline">\(\mathcal{L} =\)</span> Lagrangian</td>
 <td><span class="math inline">\(\mathcal{H} =\)</span> Hamiltonian</td>
-<td><span class="math inline">\(\mathcal{K} = E_{kin}\)</span> kinetic Energy</td>
+<td><span class="math inline">\(\mathcal{K} =\)</span> kinetic Energy</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(\mathcal{U} = E_{pot}\)</span> potential Energy</td>
-<td><span class="math inline">\(\mathcal{V} =\)</span> …</td>
-<td><span class="math inline">\(\mathcal{D} =\)</span> …</td>
+<td><span class="math inline">\(\mathcal{U} =\)</span> effective potential Energy</td>
+<td><span class="math inline">\(\mathcal{V} =\)</span> potential Energy</td>
+<td><span class="math inline">\(\mathcal{Z} = \frac{1}{2}\frac{L_0^2}{mr^2}\)</span> Centrifugal Potential</td>
 <td><span class="math inline">\(V =\)</span> Volume</td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(\mathcal{k} =\)</span> Wave Vector (“curvature”)</td>
 <td><span class="math inline">\(W =\)</span> Work</td>
 <td><span class="math inline">\(P =\)</span> Pressure</td>
-<td><span class="math inline">\(y =\)</span> capacity</td>
+<td><span class="math inline">\(L_0 =\)</span> angular momentum</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(T =\)</span> endogen Temperature</td>
 <td><span class="math inline">\(H =\)</span> exogen Heat</td>
-<td><span class="math inline">\(Y =\)</span> endogen Energy</td>
+<td><span class="math inline">\(Y =\)</span> endogen Energy (Potential)</td>
 <td><span class="math inline">\(\Phi =\)</span> Electric Potential</td>
 </tr>
 <tr class="odd">
@@ -642,7 +642,7 @@ td, th {
 <td><span class="math inline">\(c_0 =\)</span> specific heat</td>
 </tr>
 <tr class="even">
-<td><sub><span class="math inline">\(\mathcal{E}\)</span></sub><span class="math inline">\(\mathcal{C} =\)</span> electric capacity</td>
+<td>…</td>
 <td>…</td>
 <td><span class="math inline">\(l =\)</span> Moll quantity</td>
 <td>…</td>
