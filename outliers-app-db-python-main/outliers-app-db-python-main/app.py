@@ -16,6 +16,22 @@ from shared import mathjax, prose, restrict_width
 # Import MathJax for LaTeX rendering
 mathjax
 
+
+
+	<!-- mathematical formulas display with MathJax, CDN: https://docs.mathjax.org/en/latest/web/start.html -->
+	<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+	<script>
+		MathJax = {
+		  tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+
+
+    
+
 # Explanation and Explore prose
 #with restrict_width(sm=10, md=10, lg=6):
 #    prose
@@ -160,6 +176,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
