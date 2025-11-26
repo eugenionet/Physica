@@ -22,6 +22,14 @@ html_content = """
 <script type="text/javascript" id="MathJax-script" async 
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
+<script>
+	MathJax = {
+	  tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']]
+	  }
+	};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
 """
 
     
@@ -170,6 +178,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
