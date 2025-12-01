@@ -68,6 +68,26 @@ with ui.tags.head():
             });
         });
     """)
+
+with ui.card():
+    ui.p("Here's a quadratic formula: $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$")
+    ui.p("And an inline equation: $$E = mc^2$$")
+    ui.p("And simple math $$3 \\times 3+3-3$$")
+
+    # KaTeX tables https://www.redgregory.com/notion/2020/12/23/a-katex-table-cheatsheet-for-notion
+    ui.p("Table 1 $$ \\begin{array}{cc} a & b \\\\ c & d \\end{array} $$")
+    ui.p("""Table 2
+    $$ \\begin{array} {|c|c|}
+    \\hline
+    A & B \\\\
+    \\hline
+    1 & 2 \\\\
+    \\hline
+    3 & 4 \\\\
+    \\hline
+    \\end{array} $$
+    """.strip())
+    
     
 
 
@@ -185,6 +205,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
