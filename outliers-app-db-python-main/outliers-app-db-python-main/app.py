@@ -45,11 +45,14 @@ outliers, ozone = helpers.create_outliers_table(ozone, "PPM")
 # Need the entire outliers table
 outliers = outliers.to_pandas()
 
-ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \( \sqrt{3x-1}+(1+x)^2 \) ")
+ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \( \sqrt{3x-1}+(1+x)^2 \) ")    
+
+
+with ui.layout_columns():
 
 
 
-with ui.tags.head():
+    with ui.tags.head():
     ui.tags.link(
         rel="stylesheet",
         href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
@@ -68,31 +71,9 @@ with ui.tags.head():
             });
         });
     """)
-
-with ui.card():
-    ui.p("Here's a quadratic formula: $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$")
-    ui.p("And an inline equation: $$E = mc^2$$")
-    ui.p("And simple math $$3 \\times 3+3-3$$")
-
-    # KaTeX tables https://www.redgregory.com/notion/2020/12/23/a-katex-table-cheatsheet-for-notion
-    ui.p("Table 1 $$ \\begin{array}{cc} a & b \\\\ c & d \\end{array} $$")
-    ui.p("""Table 2
-    $$ \\begin{array} {|c|c|}
-    \\hline
-    A & B \\\\
-    \\hline
-    1 & 2 \\\\
-    \\hline
-    3 & 4 \\\\
-    \\hline
-    \\end{array} $$
-    """.strip())
     
     
-
-
-with ui.layout_columns():
-
+    
     with ui.card():
         ui.card_header(
             ui.markdown(
@@ -205,6 +186,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
