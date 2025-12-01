@@ -14,6 +14,23 @@ import plotly.graph_objects as go
 #Import MathJax for LaTeX rendering
 #mathjax
 
+from shiny.express import ui
+from shiny import render
+
+with ui.tags.head():
+    # Link KaTeX CSS
+    ui.tags.link(
+        rel="stylesheet",
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+    ),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
+    ui.tags.script("""
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body);
+        });
+    """)
+
     
 
 def create_outliers_table(table, col):
@@ -100,6 +117,7 @@ def find_row_number(points, editable_table):
     df_inds = [flag_inds[i] for i in point_inds if i < len(flag_inds)]
     id = df.loc[df_inds, "ID"].values[0]
     return df_original[df_original["ID"] == id].index.values.astype(int)[0].item()
+
 
 
 
