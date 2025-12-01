@@ -1,6 +1,6 @@
 
 from shiny.express import input, ui, render, session
-from shiny import reactive, render
+from shiny import reactive
 from shinywidgets import render_plotly 
 import plotly.express as px
 # import pandas as pd
@@ -162,6 +162,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
