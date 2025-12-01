@@ -47,6 +47,30 @@ outliers = outliers.to_pandas()
 
 ui.page_opts(fillable=True, title="Identify suspicious values in air quality data \( \sqrt{3x-1}+(1+x)^2 \) ")
 
+
+
+with ui.tags.head():
+    ui.tags.link(
+        rel="stylesheet",
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+    ),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
+    ui.tags.script("""
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body, {
+                    delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            });
+        });
+    """)
+    
+
+
 with ui.layout_columns():
 
     with ui.card():
@@ -161,6 +185,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
