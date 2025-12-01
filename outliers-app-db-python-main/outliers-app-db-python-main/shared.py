@@ -1,25 +1,6 @@
 from pathlib import Path
 
-from shiny import ui
-
-
-from shiny.express import ui
-from shiny import render
-
-with ui.tags.head():
-    # Link KaTeX CSS
-    ui.tags.link(
-        rel="stylesheet",
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-    ),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
-    ui.tags.script("""
-        document.addEventListener('DOMContentLoaded', function() {
-            renderMathInElement(document.body);
-        });
-    """)
-    
+from shiny import ui    
 
 
 app_dir = Path(__file__).parent
@@ -48,4 +29,5 @@ mathjax = ui.head_content(
 )
 
 prose = ui.markdown(open(app_dir / "prose.md").read())
+
 
