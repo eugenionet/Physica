@@ -74,30 +74,7 @@ with ui.layout_columns():
             if len(points.point_inds) > 0:
                 pt_selected.set(points)
     
-    with ui.layout_column_wrap(width=1, heights_equal="row"):
-
-
-        
-                        with ui.tags.head():
-    # Link KaTeX CSS
-    ui.tags.link(
-        rel="stylesheet",
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-    ),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
-    ui.tags.script("""
-        document.addEventListener('DOMContentLoaded', function() {
-            renderMathInElement(document.body);
-        });
-    """)
-
-with ui.card():
-    ui.p("Here's a quadratic formula: \\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]")
-    ui.p("And an inline equation: \\(E = mc^2\\)")
-    ui.p("\\[3 \\times 3+3-3 \\]")
-        
-        
+    with ui.layout_column_wrap(width=1, heights_equal="row"):        
         with ui.card():            
             ui.card_header(
                 ui.markdown(
@@ -184,6 +161,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
