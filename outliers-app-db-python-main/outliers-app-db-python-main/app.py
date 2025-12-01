@@ -75,15 +75,9 @@ with ui.layout_columns():
                 pt_selected.set(points)
     
     with ui.layout_column_wrap(width=1, heights_equal="row"):
-        with ui.card():            
-            ui.card_header(
-                ui.markdown(
-                    f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
-                ),
-                class_="bg-light"
-            )
 
 
+        
                         with ui.tags.head():
     # Link KaTeX CSS
     ui.tags.link(
@@ -102,8 +96,15 @@ with ui.card():
     ui.p("Here's a quadratic formula: \\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]")
     ui.p("And an inline equation: \\(E = mc^2\\)")
     ui.p("\\[3 \\times 3+3-3 \\]")
-
-    
+        
+        
+        with ui.card():            
+            ui.card_header(
+                ui.markdown(
+                    f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
+                ),
+                class_="bg-light"
+            )    
 
             @render.data_frame
             def outliers_editable():
@@ -183,6 +184,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
