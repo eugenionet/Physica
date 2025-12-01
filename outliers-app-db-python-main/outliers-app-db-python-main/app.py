@@ -21,25 +21,6 @@ mathjax
 #with restrict_width(sm=10, md=10, lg=6):
 #    prose
 
-with ui.tags.head():
-    # Link KaTeX CSS
-    ui.tags.link(
-        rel="stylesheet",
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-    ),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
-    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
-    ui.tags.script("""
-        document.addEventListener('DOMContentLoaded', function() {
-            renderMathInElement(document.body);
-        });
-    """)
-
-with ui.card():
-    ui.p("Here's a quadratic formula: \\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]")
-    ui.p("And an inline equation: \\(E = mc^2\\)")
-    ui.p("\\[3 \\times 3+3-3 \\]")
-    
 
 # Initialize the Ibis connection
 con = ibis.duckdb.connect(database=':memory:')
@@ -95,6 +76,29 @@ with ui.layout_columns():
     
     with ui.layout_column_wrap(width=1, heights_equal="row"):
         with ui.card():
+
+
+            with ui.tags.head():
+    # Link KaTeX CSS
+    ui.tags.link(
+        rel="stylesheet",
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+    ),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"),
+    ui.tags.script(src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"),
+    ui.tags.script("""
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body);
+        });
+    """)
+
+with ui.card():
+    ui.p("Here's a quadratic formula: \\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]")
+    ui.p("And an inline equation: \\(E = mc^2\\)")
+    ui.p("\\[3 \\times 3+3-3 \\]")
+    
+
+            
             ui.card_header(
                 ui.markdown(
                     f"{icon_svg('circle-info')} \\\(\sum\\\) Change `Flag` to `1` to flag a value as an error. Flagged points will appear red in the plot."
@@ -180,6 +184,7 @@ def write_data():
         )
     else:
         ui.notification_show(ui.markdown("No changes to write to database."), type="warning")
+
 
 
 
